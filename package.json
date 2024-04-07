@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Aprendiendo JS FUllStack",
-  "main": "./main.js",
+  "main": "./index.js",
   "scripts": {
     "test": "test",
     "dev": "nodemon main",
-    "start": "node main"
+    "start": "node index.js"
   },
   "author": "Mauricio CR",
   "license": "ISC",
