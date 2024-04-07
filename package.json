@@ -7,7 +7,7 @@
   "scripts": {
     "test": "test",
     "dev": "nodemon main",
-    "build": "node -r dotenv/config index.js"
+    "build": "node index.js"
   },
   "author": "Mauricio CR",
   "license": "ISC",
