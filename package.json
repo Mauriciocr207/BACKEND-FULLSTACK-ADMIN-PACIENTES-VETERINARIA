@@ -7,7 +7,7 @@
   "scripts": {
     "test": "test",
     "dev": "nodemon main",
-    "start": "node index.js"
+    "build": "node index.js"
   },
   "author": "Mauricio CR",
   "license": "ISC",
