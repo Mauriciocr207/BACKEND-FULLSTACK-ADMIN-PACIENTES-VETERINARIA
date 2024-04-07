@@ -2,13 +2,9 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
 
-const {
-    MONGO_URI
-} = process.env;
-
 export const DB = async () => {
     try {
-        const connection = await mongoose.connect(MONGO_URI);
+        const connection = await mongoose.connect(process.env.MONGO_URI);
         const {connection: {host, port}} = connection;
         const url = `${host}:${port}`;
         console.log(`Connected to MongoDB | ${url}`);
