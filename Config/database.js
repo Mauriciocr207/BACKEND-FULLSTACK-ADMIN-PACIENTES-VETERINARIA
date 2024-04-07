@@ -1,7 +1,12 @@
 import mongoose from "mongoose";
-import {configDotenv} from "dotenv";
+import dotenv from "dotenv";
 
-// configDotenv();
+const result = dotenv.config();
+console.log(result);
+if(result.error) {
+    console.log(result.error);
+    throw new Error(result.error);
+}
 
 export const DB = async () => {
     try {
