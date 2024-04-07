@@ -1,6 +1,6 @@
 import {Router} from "express";
 import VeterinarioController from "../Controllers/VeterinarioController.js";
-import authMiddleware from "../Middleware/AuthMiddleware.js";
+import authMiddleware from "../Middleware/authMiddleware.js";
 
 const VeterinarioRouter = Router();
 
