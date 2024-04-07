@@ -1,11 +1,12 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
-const result = dotenv.config();
+const result = dotenv.config({silent: true});
 console.log(result);
 if(result.error) {
+    console.log('error en dotenv');
     console.log(result.error);
-    throw new Error(result.error);
+    console.log(process.env.MONGO_URI);
 }
 
 export const DB = async () => {
